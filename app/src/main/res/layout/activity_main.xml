@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/launcher_title"
+            android:textColor="#4CAF50"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/launcher_subtitle"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerLayout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:background="#1E1E1E"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_player_name"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/hint_player_name"
+            android:textColorHint="#666666"
+            android:textColor="#FFFFFF"
+            android:background="#2A2A2A"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_select_version"
+            android:textColor="#FFFFFF" />
+
+        <Spinner
+            android:id="@+id/spVersion"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#2A2A2A"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp" />
+
+        <TextView
+            android:id="@+id/tvRamLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_ram_text"
+            android:textColor="#FFFFFF" />
+
+        <SeekBar
+            android:id="@+id/sbRam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="4096"
+            android:progress="2048"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/btn_play"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>
